@@ -1,0 +1,49 @@
+{
+  "name": "nexus-os",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Nexus OS - The Company Operating System. One Platform. One Workspace.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup": "node scripts/setup.mjs",
+    "seed": "node scripts/setup.mjs --seed",
+    "test": "node scripts/test-formula.mjs && node scripts/test-api.mjs",
+    "test:unit": "vitest run -c tests/vitest.config.ts",
+    "test:watch": "vitest -c tests/vitest.config.ts",
+    "test:coverage": "vitest run -c tests/vitest.config.ts --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^12.10.1",
+    "clsx": "^2.1.1",
+    "jose": "^5.6.3",
+    "next": "^14.2.35",
+    "pino": "^10.4.0",
+    "pino-pretty": "^13.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^15.0.7",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.15",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitest/coverage-v8": "^2.1.4",
+    "autoprefixer": "^10.4.20",
+    "jsdom": "^24.0.0",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vitest": "^2.1.4"
+  }
+}
