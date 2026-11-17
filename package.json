@@ -22,18 +22,25 @@
     "db:pg:health": "node -e \"require('./lib/db-postgres.ts').checkDbHealth().then(console.log)\""
   },
   "dependencies": {
+    "@auth/saml-jose": "^0.1.0",
+    "@aws-sdk/client-s3": "^3.500.0",
+    "@aws-sdk/s3-request-presigner": "^3.500.0",
     "bcryptjs": "^2.4.3",
     "better-sqlite3": "^12.10.1",
     "clsx": "^2.1.1",
     "dotenv": "^18.0.10",
     "jose": "^5.6.3",
     "next": "^14.2.35",
+    "next-auth": "^4.24.5",
+    "otplib": "^13.6.0",
     "pg": "^8.11.5",
     "pino": "^10.4.0",
     "pino-pretty": "^13.2.0",
+    "qrcode": "^1.5.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.12.7",
+    "socket.io": "^4.7.4",
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
